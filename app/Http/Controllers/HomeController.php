@@ -21,5 +21,11 @@ class HomeController extends Controller
             'recoveredCovidCasesUntilToday' => $recoveredCovidCasesUntilToday,
             'deadCovidCasesUntilToday' => $deadCovidCasesUntilToday,
         ]);
+
+        // return response([
+        //     $confirmedCovidCasesUntilToday,
+        //     $recoveredCovidCasesUntilToday,
+        //     $deadCovidCasesUntilToday,
+        // ]);
     }
 }
