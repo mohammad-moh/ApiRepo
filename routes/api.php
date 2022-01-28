@@ -6,6 +6,7 @@ use App\Http\Controllers\api\StudentController;
 use App\Http\Controllers\api\JwtAuthController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ThirdPartyApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +46,4 @@ Route::put('/comment/{id}', [CommentController::class, 'update']);
 Route::delete('comment/{id}',[CommentController::class, 'destroy']);
 
 Route::get('/static', [HomeController::class, 'index']);
+Route::get('/get-api', [ThirdPartyApiController::class, 'getApi']);

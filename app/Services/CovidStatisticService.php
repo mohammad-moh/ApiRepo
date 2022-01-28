@@ -11,8 +11,7 @@ class CovidStatisticService
         $today = Carbon::now()->toDateString();
 
         $httpClient = new \GuzzleHttp\Client();
-        $request =
-            $httpClient
+        $request = $httpClient
                 ->get("https://api.covid19api.com/total/country/${country}/status/${type}?from=${today}&to=${today}");
 
         $response = json_decode($request->getBody()->getContents());

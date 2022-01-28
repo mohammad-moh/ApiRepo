@@ -95,7 +95,7 @@ class CommentController extends Controller
      */
     public function destroy($id)
     {
-        $comment = Comment::destroy($id);
+        Comment::destroy($id);
         return "Deleted successfuly";
     }
 }
