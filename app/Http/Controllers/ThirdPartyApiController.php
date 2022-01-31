@@ -8,7 +8,7 @@ class ThirdPartyApiController extends Controller
 {
     public function Cli(){
         $client = new \GuzzleHttp\Client([
-            'base_uri' => 'http://xxx.xxx.xxx:3000',
+            'base_uri' => 'https://rapidapi.com/Gramzivi/api/covid-19-data/',
             'headers' => [
                 'Content-Type' => 'application/json',
                 'customer_name' => 'test',
